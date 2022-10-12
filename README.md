@@ -9,9 +9,14 @@
 ## 本地浏览
 <pre>npm run dev</pre>
 开发环境时，修改src/App.Vue 52行，将http://127.0.0.1:5088 修改为你量子的地址。
+也可以直接指定开发和生产环境地址为你的量子地址，如：
+<pre>
+baseUrl:"http://127.0.0.1:5088",
+</pre>
 ## 打包
 <pre>npm run build</pre>
-打包时，默认没有根地址。
+
+
 可修改参数 /src/config/index.js
 <pre>
 module.exports = {
